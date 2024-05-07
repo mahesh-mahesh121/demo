@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.css' %}">
+    <script src="{% static 'javascript/one.js' %}"></script>
+</head>
+<body>
+    <table>
+        <th>Name</th>
+        <th>password</th>
+        <tbody>
+            <tr>
+                <td>{{name}}</td>
+                <td>{{password}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 class="container text-success bg-danger">welcome</h1>
+    <img src="{% static 'images/p.jpg' %}" alt="loading">
+    <button onclick="a()">Click</button>
+</body>
+</html>
